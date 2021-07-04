@@ -1,4 +1,6 @@
 # ...
 .netrwhist
 
+# Where pluggins installing
+autoload/plugged
 
