@@ -12,5 +12,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
+    " Start page
+    Plug 'mhinz/vim-startify'
+    " Fzf commands
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
 
 call plug#end()
