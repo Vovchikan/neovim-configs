@@ -43,3 +43,5 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
+
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
