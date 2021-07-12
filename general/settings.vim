@@ -1,6 +1,22 @@
 " set leader key
 let g:mapleader = "\<Space>"
 
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+    " Use filetype detection and file-based automatic indenting.
+    filetype plugin indent on
+
+    " Use actual tab chars in Makefiles.
+    autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+endif
+
+" For everything else, use a tab width of 2 space chars.
+set tabstop=2       " How many columns of whitespace a \t is worth.
+set shiftwidth=2    " Is how many columns of whitespace a 'level of indentation' is worth.
+set softtabstop=2   " How many columns of whitespace a tab keypress or a backspace keypress is worth.
+set expandtab       " Means that you never wanna see a \t again in your file.
+
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
@@ -14,10 +30,7 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=2                           " Insert 2 spaces for a tab
-set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
