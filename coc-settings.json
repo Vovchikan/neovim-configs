@@ -1,14 +1,15 @@
-{
+{ // install coc-json for this file
   "languageserver": {
     "erlang": {
-      "command": "erlang_ls",
+      "command": "erlang_ls", // install from official site
       "filetypes": ["erlang"]
+    },
+    "bash": { // this shit doesn't worked, need tests
+      "command": "bash-language-server", // install from npm (google it)
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
     }
-  },
-  "bash": {
-    "command": "bash-language-server",
-    "args": ["start"],
-    "filetypes": ["sh"]
   }
 }
 
