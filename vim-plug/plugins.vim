@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Start page
     Plug 'mhinz/vim-startify'
     " Fzf commands
-    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     " Coc.vim - for language servers
     Plug 'neoclide/coc.nvim', {'branch': 'release'}

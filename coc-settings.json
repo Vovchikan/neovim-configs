@@ -7,8 +7,7 @@
     "bash": { // this shit doesn't worked, need tests
       "command": "bash-language-server", // install from npm (google it)
       "args": ["start"],
-      "filetypes": ["sh"],
-      "ignoredRootPaths": ["~"]
+      "filetypes": ["sh"]
     }
   }
 }
