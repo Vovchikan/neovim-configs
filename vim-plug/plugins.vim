@@ -21,5 +21,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Theme onedark with 5 styles for nvim >= 5
     Plug 'navarasu/onedark.nvim'
+    " Vim Script
+    Plug 'folke/which-key.nvim'
 
 call plug#end()
