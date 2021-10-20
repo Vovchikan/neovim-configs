@@ -16,6 +16,7 @@ set tabstop=2       " How many columns of whitespace a \t is worth.
 set shiftwidth=2    " Is how many columns of whitespace a 'level of indentation' is worth.
 set softtabstop=2   " How many columns of whitespace a tab keypress or a backspace keypress is worth.
 set expandtab       " Means that you never wanna see a \t again in your file.
+set scrolloff=8     " set number of screen lines to keep above/below the cursor
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers

@@ -21,5 +21,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Theme onedark
     Plug 'joshdick/onedark.vim'
+    " Vim Script
+    Plug 'folke/which-key.nvim'
 
 call plug#end()
