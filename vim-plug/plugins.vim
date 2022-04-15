@@ -10,13 +10,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
+
+    " File Explorer requires
+    Plug 'kyazdani42/nvim-web-devicons' " for file icons, need to install NORD FONTS
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    Plug 'kyazdani42/nvim-tree.lua'
+
     " Start page
     Plug 'mhinz/vim-startify'
+
     " Fzf commands
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+
     " Coc.vim - for language servers
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Theme onedark
