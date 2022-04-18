@@ -32,4 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim Script
     Plug 'folke/which-key.nvim'
 
+    " Tmux navigator for nvim
+    Plug 'alexghergh/nvim-tmux-navigation'
+
 call plug#end()
