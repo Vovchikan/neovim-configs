@@ -5,4 +5,4 @@ require('nvim-tree.settings')
 vim.api.nvim_command('source $HOME/.config/nvim/keys/mappings.vim')
 vim.api.nvim_command('source $HOME/.config/nvim/modules/coc.vim')
 vim.api.nvim_command('source $HOME/.config/nvim/modules/startify.vim')
-vim.api.nvim_command('source $HOME/.config/nvim/themes/onedark.vim')
+require('themes.settings') -- $HOME/.config/lua/themes/settings.lua
