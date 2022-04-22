@@ -16,7 +16,7 @@ let g:startify_skiplist = [
         \ ]
 
 let g:startify_bookmarks = [
-        \ { 'c': '~/.config/nvim/init.vim' },
+        \ { 'c': '~/.config/nvim/init.lua' },
         \ '~/dvp',
         \ ]
 
