@@ -11,10 +11,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
 
-    " File Explorer requires
+    " File Explorer and lualine requires
     Plug 'kyazdani42/nvim-web-devicons' " for file icons, need to install NORD FONTS
     " File Explorer
     Plug 'kyazdani42/nvim-tree.lua'
+
+    " Status line in lua
+    Plug 'nvim-lualine/lualine.nvim' " requires nvim-web-devicons
 
     " Start page
     Plug 'mhinz/vim-startify'
@@ -29,7 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Theme onedark with 5 styles for nvim >= 5
     Plug 'navarasu/onedark.nvim'
 
-    " Vim Script
+    " Show key's mappings
     Plug 'folke/which-key.nvim'
 
     " Tmux navigator for nvim
