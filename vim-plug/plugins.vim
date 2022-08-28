@@ -27,7 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
 
     " Coc.vim - for language servers
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80'}
 
     " Theme onedark with 5 styles for nvim >= 5
     Plug 'navarasu/onedark.nvim'
