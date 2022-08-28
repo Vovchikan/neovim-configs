@@ -20,7 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lualine/lualine.nvim' " requires nvim-web-devicons
 
     " Start page
-    Plug 'mhinz/vim-startify', {'commit', '81e36c352a8deea54df5ec1e2f4348685569bed2'}
+    Plug 'mhinz/vim-startify', {'commit': '81e36c352a8deea54df5ec1e2f4348685569bed2'}
 
     " Fzf commands
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
