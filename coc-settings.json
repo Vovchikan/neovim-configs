@@ -1,14 +1,20 @@
-{ // install coc-json for this file
+{
+  "notification.disabledProgressSources": ["erlang"],
   "languageserver": {
     "erlang": {
-      "command": "erlang_ls", // install from official site
+      "command": "erlang_ls",
+      "args": [
+        "--log-dir",
+        "/tmp/erlang_ls.log",
+        "--log-level",
+        "info"
+      ],
       "filetypes": ["erlang"]
     },
-    "bash": { // this shit doesn't worked, need tests
-      "command": "bash-language-server", // install from npm (google it)
+    "bash": {
+      "command": "bash-language-server",
       "args": ["start"],
       "filetypes": ["sh"]
     }
   }
 }
-
