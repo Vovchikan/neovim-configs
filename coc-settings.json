@@ -1,5 +1,7 @@
 {
   "notification.disabledProgressSources": ["erlang"],
+  "clangd.enabled": true,
+  "clangd.arguments": ["-header-insertion=never"],
   "languageserver": {
     "erlang": {
       "command": "erlang_ls",
